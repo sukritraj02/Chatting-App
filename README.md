@@ -64,7 +64,7 @@ A real-time chat application built using **Node.js**, **Express**, and **Socket.
 
 ## 📸 Screenshots
 
-_Add screenshots of your application running in the browser._
+![image](https://github.com/user-attachments/assets/ddf434f7-b4c7-4d5b-a1e5-3c9a0c326255)
 
 ---
 
