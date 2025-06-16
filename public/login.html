@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Chat App</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #222;
+      color: white;
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Enter your name to join the chat</h2>
+  <input type="text" id="username" placeholder="Your Name" />
+  <button onclick="login()">Join Chat</button>
+
+  <script>
+    function login() {
+      const username = document.getElementById("username").value.trim();
+      if (username !== "") {
+        localStorage.setItem("chat-username", username);
+        window.location.href = "/index.html";
+      } else {
+        alert("Please enter a name!");
+      }
+    }
+  </script>
+</body>
+</html>
